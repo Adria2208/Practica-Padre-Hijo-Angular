@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "PracticaPadreHijo"
+  "defaultProject": "PracticaPadreHijo",
+  "cli": {
+    "analytics": false
+  }
 }
