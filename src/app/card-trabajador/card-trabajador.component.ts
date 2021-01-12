@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Trabajador } from "../modules/trabajador";
+
 @Component({
   selector: 'app-card-trabajador',
   templateUrl: './card-trabajador.component.html',
@@ -7,8 +8,12 @@ import { Trabajador } from "../modules/trabajador";
 })
 export class CardTrabajadorComponent implements OnInit {
 
+  @Input() trabajadores: any;
+  @Input() i:any;
+
+
   constructor() {
-    console.log("Does this shit work?");
+    
   }
 
   ngOnInit(): void {

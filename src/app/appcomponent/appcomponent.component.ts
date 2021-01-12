@@ -6,6 +6,7 @@ import { Trabajador } from "../modules/trabajador";
   templateUrl: './appcomponent.component.html',
   styleUrls: ['./appcomponent.component.css']
 })
+
 export class AppcomponentComponent implements OnInit {
 
 

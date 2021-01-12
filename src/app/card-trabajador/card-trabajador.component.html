@@ -2,29 +2,30 @@
   <div class="card h-100">
     <!--Card image-->
     <div class="view overlay">
-      <img class="card-img-top" src="../../assets/1.jpg" alt="Card image cap"> <!-- completar src con la foto del trabajador -->
+      <img class="card-img-top" src="../../assets/{{trabajadores[i].foto}}" alt="Card image cap" />
+      <!-- completar src con la foto del trabajador -->
       <a href="#!">
         <div class="mask rgba-white-slight"></div>
       </a>
-
     </div>
 
     <div class="card-body">
-
-
-
       <!--Title-->
-      <h4 class="card-title"> xxxx </h4> <!-- Mostrar nombre del trabajador -->
-      <h4> xxxx </h4> <!-- Mostrar cargo del trabajador -->
+      <h4 class="card-title">{{trabajadores[i].nombre}}</h4>
+      <!-- Mostrar nombre del trabajador -->
+      <h4>{{trabajadores[i].cargo}}</h4>
+      <!-- Mostrar cargo del trabajador -->
       <!--Text-->
-      <p class="card-text">Votos: xxxx
+      <p class="card-text">
+        Votos: {{trabajadores[i].votos}}
         <!-- Mostrar votos del trabajador -->
         <!-- <img src="xxxx" (click)="xxxx">
               <img src="xxxx" (click)="xxxx"> -->
-        <img src="../../assets/like.jpg" alt=""> <!-- Mostrar en src imagen like.jpg   y llamar a funcion like   con el id del trabajador -->
-        <img src="../../assets/unlike.jpg" alt=""> <!-- Mostrar en src imagen unlike.jpg y llamar a funcion unlike con el id del trabajador -->
+        <img src="../../assets/like.jpg" alt="" />
+        <!-- Mostrar en src imagen like.jpg   y llamar a funcion like   con el id del trabajador -->
+        <img src="../../assets/unlike.jpg" alt="" />
+        <!-- Mostrar en src imagen unlike.jpg y llamar a funcion unlike con el id del trabajador -->
       </p>
-
     </div>
 
     <div class="text-center">
@@ -32,11 +33,8 @@
 
       <button type="button" class="btn btn-danger">Borrar Trabajador</button>
       <!--llamar a funcion eliminar con el id del trabajador -->
-
     </div>
-
   </div>
 
   <!-- Card -->
-
 </div>
