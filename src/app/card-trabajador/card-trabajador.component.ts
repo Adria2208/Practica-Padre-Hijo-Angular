@@ -1,5 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Trabajador } from "../modules/trabajador";
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-card-trabajador',
@@ -9,8 +8,13 @@ import { Trabajador } from "../modules/trabajador";
 export class CardTrabajadorComponent implements OnInit {
 
   @Input() trabajadores: any;
-  @Input() i:any;
+  @Input() i:any; //Indice de el bucle *ngFor
 
+  @Output() likeTrabajador = new EventEmitter<number>();
+
+  like(id:number){
+    this.likeTrabajador.emit(id);
+  }
 
   constructor() {
     
