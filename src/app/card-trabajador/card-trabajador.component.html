@@ -20,7 +20,7 @@
               <img src="xxxx" (click)="xxxx"> -->
         <img src="../../assets/like.jpg" alt="" (click)="like(trabajadores[i].id)"/>
         <!-- Mostrar en src imagen like.jpg   y llamar a funcion like   con el id del trabajador -->
-        <img src="../../assets/unlike.jpg" alt="" />
+        <img src="../../assets/unlike.jpg" alt="" (click)="unlike(trabajadores[i].id)"/>
         <!-- Mostrar en src imagen unlike.jpg y llamar a funcion unlike con el id del trabajador -->
       </p>
     </div>
@@ -28,7 +28,7 @@
     <div class="text-center">
       <!-- <button type="button" class="btn btn-danger" (click)="xxxx">Borrar Trabajador</button> llamar a funcion eliminar con el id del trabajador -->
 
-      <button type="button" class="btn btn-danger">Borrar Trabajador</button>
+      <button type="button" class="btn btn-danger" (click)="borrar(trabajadores[i].id)">Borrar Trabajador</button>
       <!--llamar a funcion eliminar con el id del trabajador -->
     </div>
   </div>

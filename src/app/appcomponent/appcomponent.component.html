@@ -3,7 +3,7 @@
   <div class="row row-cols-1 row-cols-md-6">
 
     <div *ngFor="let trabajador of trabajadores; index as i">
-      <app-card-trabajador [trabajadores]="trabajadores" [i]="i" (likeTrabajador)="sumaVoto($event)">
+      <app-card-trabajador [trabajadores]="trabajadores" [i]="i" (likeTrabajador)="sumaVoto($event)" (unlikeTrabajador)="restaVoto($event)" (borrarTrabajador)="borrar($event)">
         <!-- Definir la etiqueta para incluir *ngFor, paso de datos a card-trabajador y recepción de eventos del hijo -->
      </app-card-trabajador>
     </div>

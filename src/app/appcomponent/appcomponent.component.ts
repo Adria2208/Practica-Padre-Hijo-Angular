@@ -59,10 +59,16 @@ export class AppcomponentComponent implements OnInit {
     }
   ]
 
-  // metodo para borrar el trabajador pasado por id del array de trabajadores
-  borrar(id: number) { }
+  borrar(id: number) {
+    this.trabajadores.forEach(trabajador => {
+      let indexTrabajador;
+      if (trabajador.id == id) {
+        indexTrabajador = this.trabajadores.indexOf(trabajador);
+        this.trabajadores.splice(indexTrabajador, 1);
+      }
+    });
+  }
 
-  // metodo para sumar un voto al trabajador pasado por id
   sumaVoto(id: number) {
     //He intentado hacerlo con el metodo .find pero no he conseguido que me funcione
     this.trabajadores.forEach(trabajador => {
@@ -74,8 +80,14 @@ export class AppcomponentComponent implements OnInit {
 
   }
 
-  // metodo para restar un voto al trabajador pasado por id
-  restaVoto(id: number) { }
+  restaVoto(id: number) {
+    this.trabajadores.forEach(trabajador => {
+      if (trabajador.id == id) {
+        trabajador.votos -= 1;
+      }
+    });
+
+  }
 
   constructor() { }
 

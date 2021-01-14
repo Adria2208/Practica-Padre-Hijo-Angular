@@ -11,21 +11,23 @@ export class CardTrabajadorComponent implements OnInit {
   @Input() i:any; //Indice de el bucle *ngFor
 
   @Output() likeTrabajador = new EventEmitter<number>();
+  @Output() unlikeTrabajador = new EventEmitter<number>();
+  @Output() borrarTrabajador = new EventEmitter<number>();
+
+  borrar(id:number){
+    this.borrarTrabajador.emit(id);
+  }
 
   like(id:number){
     this.likeTrabajador.emit(id);
   }
 
-  constructor() {
-    
+  unlike(id:number){
+    this.unlikeTrabajador.emit(id);
   }
 
-  ngOnInit(): void {
+  constructor() { }
 
-
-
-
-
-  }
+  ngOnInit(): void { }
 
 }
