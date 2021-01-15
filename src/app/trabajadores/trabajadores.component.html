@@ -1,0 +1,32 @@
+<h2>{{titulo}} ({{totalTrabajadores}})</h2>
+
+<table class="table table-bordered table-striped tabla" style="margin-top: 40px;">
+  <thead>
+    <tr class="filters">
+      <th>Nombre</th>
+      <th>Cargo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let trabajador of misTrabajadores">
+      <td>{{ trabajador.nombre }}</td>
+      <td>{{ trabajador.cargo }}</td>
+      <td><button (click)="verTrabajador(trabajador)">Ver Ficha</button></td>
+      <td><button (click)="borrarTrabajador(trabajador)">Borrar</button></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<button (click)="verTotal()">Total trabajadores</button>
+
+
+
+
+
+
+
+
+
+
+
+<hr><br><br>
