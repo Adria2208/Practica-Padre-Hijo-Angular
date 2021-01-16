@@ -9,11 +9,8 @@ import { Trabajador } from "../modules/trabajador";
 
 export class AppcomponentComponent implements OnInit {
 
-
-  //declarar la variable titulo
   titulo = "Listado de trabajadores";
 
-  //declarar la variable trabajadores array del tipo Trabajador
   trabajadores: Trabajador[] = [
     {
       id: 1,
