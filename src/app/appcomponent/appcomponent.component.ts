@@ -83,7 +83,12 @@ export class AppcomponentComponent implements OnInit {
   restaVoto(id: number) {
     this.trabajadores.forEach(trabajador => {
       if (trabajador.id == id) {
-        trabajador.votos -= 1;
+        if (trabajador.votos > 0) {
+          trabajador.votos -= 1;
+        } else {
+          alert("No se le pueden restar mas votos a este trabajador")
+        }
+        
       }
     });
 
