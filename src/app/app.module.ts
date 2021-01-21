@@ -7,13 +7,19 @@ import { AppcomponentComponent } from './appcomponent/appcomponent.component';
 import { CardTrabajadorComponent } from './card-trabajador/card-trabajador.component';
 import { ServicioTrabajadorService } from "./servicios/servicio-trabajador.service";
 import { TrabajadoresComponent } from './trabajadores/trabajadores.component';
+import { MenuBComponent } from './menu-b/menu-b.component';
+import { InicioBComponent } from './inicio-b/inicio-b.component';
+import { ErrorBComponent } from './error-b/error-b.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppcomponentComponent,
     CardTrabajadorComponent,
-    TrabajadoresComponent
+    TrabajadoresComponent,
+    MenuBComponent,
+    InicioBComponent,
+    ErrorBComponent
   ],
   imports: [
     BrowserModule,
